@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para o meu amor ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TELA DO ENVELOPE -->
+  <div class="envelope-container" onclick="abrirCarta()">
+    <div class="envelope">
+      <div class="flap"></div>
+      <div class="message">Clique para abrir 💌</div>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO DA CARTA -->
+  <div class="carta" id="carta">
+
+    <h1>Beatriz, meu amor 💖</h1>
+    <p class="subtitle">Se você está vendo isso, é porque escaneou o QR Code do meu coração</p>
+
+    <section class="declaracao">
+      <h2>Minha Declaração</h2>
+      <p>
+        Amor, desde o dia 07/08/2025 minha vida mudou de um jeito que eu nunca imaginei.
+        Você chegou toda marrenta, teimosa, cheia de personalidade… e mesmo assim eu me apaixonei completamente por você.
+      </p>
+      <p>
+        Eu amo seu jeito difícil às vezes, amo suas manias, seu sorriso, seu abraço,
+        e até quando você implica comigo. Você é mais nova, mas me ensina todos os dias
+        o que é amar de verdade.
+      </p>
+      <p>
+        Eu nunca amei ninguém do jeito que amo você. E se depender de mim,
+        ainda vamos viver muitos capítulos lindos da nossa história.
+        Obrigado por ser meu amor. ❤️
+      </p>
+    </section>
+
+    <section class="fotos">
+      <h2>Nossos Momentos 📸</h2>
+      <div class="galeria">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+        <img src="foto5.jpg">
+      </div>
+    </section>
+
+    <section class="tempo">
+      <h2>Estamos juntos há ⏳</h2>
+      <p id="contador"></p>
+    </section>
+
+    <button onclick="tocarMusica()">Tocar nossa música 🎵</button>
+
+    <footer>
+      <p>Com amor, pra sempre seu ❤️</p>
+    </footer>
+
+  </div>
+
+  <audio id="musica" src="musica.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

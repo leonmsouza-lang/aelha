@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ENVELOPE */
+.envelope-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.envelope {
+  width: 220px;
+  height: 140px;
+  background: #fff;
+  position: relative;
+  border-radius: 8px;
+}
+
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ff4e7a;
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+  transition: transform 1s ease;
+}
+
+.message {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  color: #333;
+  font-weight: bold;
+}
+
+/* CARTA ESCONDIDA */
+.carta {
+  display: none;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+  animation: aparecer 1.5s ease forwards;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  margin: 40px 0;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button {
+  background-color: #ff4e7a;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 40px;
+}
